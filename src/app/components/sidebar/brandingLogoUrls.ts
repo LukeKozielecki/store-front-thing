@@ -1,0 +1,1 @@
+export const BRAND_LOGO_URL = "https://cdn.discordapp.com/attachments/759849266780176476/1317128837691084810/duality-of-cat_blurred.png?ex=675d8f51&is=675c3dd1&hm=fcc9a14b0eff8bd4159a3c385aeffd4cbcd48c92629c400a7fbcc5eb5f006d64";
