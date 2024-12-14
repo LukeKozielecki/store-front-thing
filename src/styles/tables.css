@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-container {
+    @apply p-4 bg-white shadow-md rounded-lg mt-2;
+}
+
+.table-header {
+    @apply bg-gray-200 text-gray-700 text-left;
+}
+
+.table-cell {
+    @apply py-2 px-4 border-b border-gray-300 text-gray-700;
+}
+
+.hover-row {
+    @apply hover:bg-gray-50;
+}
+
+.search-filter-icons {
+    @apply flex space-x-2;
+}
+
+.status {
+    @apply px-2 py-1 text-xs font-semibold rounded-lg w-20 block text-center;
+}
+
+.status-completed {
+    @apply bg-green-200 text-green-700;
+}
+
+.status-pending {
+    @apply bg-yellow-200 text-yellow-700;
+}
+
+.status-process {
+    @apply bg-blue-200 text-blue-700;
+}

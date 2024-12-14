@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import {it, expect, describe, vi} from "vitest";
 import { render, screen } from '@testing-library/react';
-import Sidebar from "@/app/components/Sidebar";
+import DesktopSidebar from "@/app/components/DesktopSidebar";
 
 vi.mock('@/app/components/sidebar/menuItems', () => ({
     primaryMenuItems: ['Home', 'About', 'Services'],
@@ -10,7 +10,7 @@ vi.mock('@/app/components/sidebar/menuItems', () => ({
 
 describe('Sidebar', () => {
     it('renders the brand logo and title', () => {
-        render(<Sidebar />);
+        render(<DesktopSidebar />);
 
         const brandLink = screen.getByRole('link', { name: /duality of cat/i });
         const brandImage = screen.getByAltText(/duality of cat brand logo/i);
@@ -20,7 +20,7 @@ describe('Sidebar', () => {
     });
 
     it('renders primary menu items', () => {
-        render(<Sidebar />);
+        render(<DesktopSidebar />);
 
         const primaryItems = ['Home', 'About', 'Services'];
         primaryItems.forEach(item => {
@@ -29,7 +29,7 @@ describe('Sidebar', () => {
     });
 
     it('renders utility menu items', () => {
-        render(<Sidebar />);
+        render(<DesktopSidebar />);
 
         const utilityItems = ['Settings', 'Logout'];
         utilityItems.forEach(item => {
