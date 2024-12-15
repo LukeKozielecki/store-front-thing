@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "cdn.discordapp.com",
+                hostname: "drive.google.com",
             },
         ],
     },

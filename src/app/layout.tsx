@@ -4,6 +4,7 @@ import DesktopSidebar from "@/app/components/DesktopSidebar";
 import React from "react";
 import MobileSidebar from "@/app/components/MobileSidebar";
 import {DarkModeProvider} from "@/app/components/DarkModeContext";
+import CheckUserAuth from "@/app/(auth)/CheckUserAuth";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">
+        <CheckUserAuth/>
         <DarkModeProvider>
             <body>
             <div className="flex flex-col min-h-screen">

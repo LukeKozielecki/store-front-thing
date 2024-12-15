@@ -4,7 +4,6 @@ import React from "react";
 import {useDarkMode} from "@/app/components/DarkModeContext";
 import SidebarContent from "@/app/components/sidebar/SidebarContent";
 
-
 const DesktopSidebar = () => {
     const { isDarkMode, toggleDarkMode } = useDarkMode();
 
