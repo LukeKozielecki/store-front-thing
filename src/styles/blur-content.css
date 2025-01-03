@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blur-content {
+    @apply blur-sm transition-all duration-300;
+}
